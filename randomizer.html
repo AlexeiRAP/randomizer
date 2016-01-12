@@ -77,8 +77,8 @@ var randomizerApp = angular.module("randomizer", []);
 			$scope.answer = "";
 		}
 		var findWords = function(array){
-			var my_word1 = array.nouns[Math.floor(Math.random()*array.nouns.length)];
-	    	var my_word2 = array.adjectives[Math.floor(Math.random()*array.adjectives.length)]	
+		    	var my_word1 = array.adjectives[Math.floor(Math.random()*array.adjectives.length)];
+		    	var my_word2 = array.nouns[Math.floor(Math.random()*array.nouns.length)];	
 	    	return my_word1+my_word2;
 		}
 		var checkWords = function (word, array){
