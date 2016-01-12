@@ -42,7 +42,10 @@ var model = {
 
 var randomizerApp = angular.module("randomizer", []);
 	randomizerApp.controller("randomizerController", function ($scope, $http) {
-		var words;
+		var words = {
+				nouns:["time","person","year","way","day","thing","man","world","life","hand"],
+				adjectives:["different","used","important","every","large","available","popular","able","basic","known","various","difficult","several","united"]
+			};
 		$http({method: "GET", url: "https://fathomless-everglades-3680.herokuapp.com/api/dictionary"}).success(function(data){
 	    		words = data;	
 	    })
